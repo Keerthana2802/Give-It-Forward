@@ -29,7 +29,7 @@
                 <li><a href="#achievements">Achievements</a></li>
                 <li><a href="about.html">About us</a></li>
                 <li><a href="contact.html">Contact us</a></li>
-                <li><a class="nav-link login-button" href="#">Donate</a></li>
+                <li><a class="nav-link login-button" href="user.html">Donate</a></li>
             </ul>
         </nav>
     </header>
@@ -43,7 +43,7 @@
     <!-- side bar -->
     <div class="side-bar">
         <ul>
-            <li><a href="profile.html">
+            <li><a href="#">
                     <span class="person material-symbols-outlined">
                         person
                     </span>
@@ -53,42 +53,23 @@
         </ul>
     </div>
     <!-- form -->
-    <div class="form-container">
-        <h2>Donation Details</h2>
-        <form>
-            <p style="color: rgb(118, 118, 118);text-align: center;">Please ensure to fill in the details correctly</p>
-            <label for="name">Name : </label>
-            <input type="text" name="name" id="name" required><br>
-            <label for="phone">Phone : </label>
-            <input type="tel" name="phone" id="phone" required><br><br>
-            <div class="wrapper">
-                <label for="address">Address : </label>
-                <textarea name="address" id="address" cols="45" rows="5" required></textarea>
+    <div class="card-container">
+        <div class="btn">
+            <button id="edit" onclick="handleEdit()">Edit ✏️</button>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="/assets/keerthanaa.jpg" alt="user profile"></div>
+            <div class="card-text">
+                <h1 class="info" contenteditable="false">Keerthana Ravi</h1>
+                <p class="info" contenteditable="false">+91 987 654 3210</p>
+                <p>Donation Points : 350💓</p>
+
             </div>
-            <br>
-            <label for="landmark">Landmark : </label>
-            <input type="text" name="landmark" id="landmark"><br>
-            <label for="category">Category : </label>
-            <select name="category" id="category" required>
-                <option value="food">Food</option>
-                <option value="clothes">Clothes</option>
-                <option value="accessories">Accessories</option>
-                <option value="others">Others</option>
-            </select><br>
-            <label for="quantity">Quantity : </label>
-            <input type="number" name="quantity" id="quantity" placeholder="optional">
-            <div class="wrapper">
-                <label for="desc"> Short Description : </label>
-                <textarea name="desc" id="desc" cols="45" rows="5"></textarea>
-            </div><br><br>
-            <div class="submit">
-                <button type="submit">Submit</button>
-            </div>
-        </form>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <script src="GIF.js"></script>
+    <script src="trust.js"></script>
 </body>
 
 </html>

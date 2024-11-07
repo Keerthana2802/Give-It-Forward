@@ -260,3 +260,132 @@ select {
   width: 500px;
   margin: 2rem 0;
 }
+
+/* trust */
+
+#myInput {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+}
+
+#myInput ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trust-item {
+  background-color: white;
+  border-radius: 8px;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.trust-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.trust-item a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.about-btn {
+  padding: 8px 16px;
+  background-color: #ff7f3e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.about-btn:hover {
+  background-color: #ff661a;
+}
+
+.content {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  display: none;
+  transition: display 0.3s ease;
+}
+
+.trust-item.show-content .content {
+  display: block;
+}
+
+.trust-item.show-content {
+  flex-direction: column;
+}
+
+/* profile */
+
+.card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card-container {
+  position: relative;
+  border-radius: 5px;
+  max-width: 500px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(33, 33, 33, 0.075),
+    0 6px 20px 0 rgba(33, 33, 33, 0.075);
+  padding: 1.9rem 5rem;
+  margin: 5rem 0 5rem 27rem;
+}
+
+.card-text p {
+  font-size: 1.2rem;
+  color: #555;
+  padding: 0.5rem 0 0 0;
+}
+
+.card-text h1 {
+  color: #333;
+}
+
+#edit {
+  border: 1px solid #ff661a;
+  margin: 0.5rem 0;
+  padding: 5px 10px;
+  color: #ff661a;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.btn {
+  position: absolute;
+  top: 0.8rem;
+  right: 1.5rem;
+  font-size: 0.8rem;
+}

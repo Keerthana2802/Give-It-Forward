@@ -15,3 +15,29 @@ function myFunction() {
     }
   }
 }
+
+function toggleContent(contentId, trustItemId) {
+  var content = document.getElementById(contentId);
+  var trustItem = document.getElementById(trustItemId);
+
+  if (content.style.display === "none") {
+    content.style.display = "block";
+    trustItem.classList.add("show-content");
+  } else {
+    content.style.display = "none";
+    trustItem.classList.remove("show-content");
+  }
+}
+
+function handleEdit() {
+  const infoElements = document.querySelectorAll(".info");
+  const editButton = document.getElementById("edit");
+
+  if (editButton.textContent === "Edit ✏️") {
+    infoElements.forEach((element) => (element.contentEditable = "true"));
+    editButton.textContent = "Done ✅";
+  } else {
+    infoElements.forEach((element) => (element.contentEditable = "false"));
+    editButton.textContent = "Edit ✏️";
+  }
+}
